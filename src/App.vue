@@ -28,8 +28,9 @@ const title = ref('Landing Page Interativa - Vue.js')
     </main>
 
     <footer class="footer">
-      <p>&copy; 2026 - Aluna: Lívia Ghirardi</p>
+      <p>&copy; 2026 - Aluna: Lívia Ghirardi | Projeto Vue Concluído com Sucesso</p>
     </footer>
+
   </div>
 </template>
 
