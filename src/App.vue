@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-const title = ref('Landing Page - Vue.js')
+const title = ref('Landing Page Interativa - Vue.js')
 </script>
 
 <template>
