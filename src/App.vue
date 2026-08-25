@@ -22,6 +22,7 @@ const title = ref('Landing Page Interativa - Vue.js')
           <li>Single-File Components (SFC)</li>
           <li>Sistema de Reatividade Automática</li>
           <li>Ferramenta de Build com Vite</li>
+          <li>Diretivas e Interpolacoes Dinamicas</li> <!-- Novo item adicionado -->
         </ul>
       </section>
     </main>
