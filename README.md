@@ -1,38 +1,44 @@
-# .
+# Recursos do Vue.js — Projeto 02
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto Vue da atividade **Projetos com Frameworks Front-end (Aula 03)** da disciplina **Frameworks Front-end (SENAI)**.
 
-## Recommended IDE Setup
+A página apresenta os principais recursos do Vue.js. O usuário filtra os recursos por categoria e abre cada card para ver uma explicação e um exemplo de código.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Aplicação online:** https://vue-gold-alpha.vercel.app/
 
-## Recommended Browser Setup
+## Prints
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+![Página inicial](prints/pagina-inicial.png)
 
-## Customize configuration
+![Filtro por categoria e card aberto](prints/filtro-e-detalhes.png)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Componentes
 
-## Project Setup
+| Componente | Função |
+|------------|--------|
+| `App.vue` | Componente raiz que monta a página |
+| `AppHeader.vue` | Barra de navegação fixa no topo |
+| `HeroSection.vue` | Título e subtítulo, recebidos do `App` por `defineProps` |
+| `ListaRecursos.vue` | Filtro por categoria e lista de recursos (estado com `ref` e `computed`) |
+| `RecursoCard.vue` | Card de cada recurso; avisa a lista com `defineEmits` quando é aberto |
+| `ComecarSection.vue` | Chamada para começar um projeto, com os comandos do `create-vue` |
+| `AppFooter.vue` | Rodapé |
 
-```sh
+Os dados ficam em `src/data/recursos.js`.
+
+## Conceitos utilizados
+
+- **Single-File Components** com `<template>`, `<script setup>` e `<style scoped>`
+- **Props e Emits** para a comunicação entre componentes pai e filho
+- **Reatividade** com `ref` e `computed`
+- **Diretivas** `v-for`, `v-if`, `:class` (v-bind) e `@click` (v-on)
+- **Interpolação** com `{{ }}`
+
+## Como executar
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Para gerar a versão de produção: `npm run build`.
